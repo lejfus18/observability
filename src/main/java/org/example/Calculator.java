@@ -26,4 +26,8 @@ public class Calculator {
         }
         return Math.sqrt(a);
     }
+    public double powerOfTwo(int a) {
+        return Math.pow(a, 2);
+    }
 }
+
