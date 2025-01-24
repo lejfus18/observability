@@ -29,5 +29,13 @@ public class Calculator {
     public double powerOfTwo(int a) {
         return Math.pow(a, 2);
     }
+    public double sin(double angleInRadians) {
+        return Math.sin(angleInRadians);
+    }
+
+    public double cos(double angleInRadians) {
+        return Math.cos(angleInRadians);
+    }
+
 }
 
