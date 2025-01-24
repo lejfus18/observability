@@ -38,4 +38,9 @@ class CalculatorTest {
         assertThrows(IllegalArgumentException.class , () -> calculator.divide(10 , 0));
     }
 
+    @Test
+    void squareRoot() {
+        assertEquals(4.0, calculator.squareRoot(16), 0.0001);
+        assertEquals(3.0, calculator.squareRoot(9), 0.0001);
+    }
 }
