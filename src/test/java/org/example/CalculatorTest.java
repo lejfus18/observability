@@ -43,4 +43,9 @@ class CalculatorTest {
         assertEquals(4.0, calculator.squareRoot(16), 0.0001);
         assertEquals(3.0, calculator.squareRoot(9), 0.0001);
     }
+
+    @Test
+    void powerOfTwo() {
+        assertEquals(25.0, calculator.powerOfTwo(5), "5 squared should be 25");
+    }
 }
