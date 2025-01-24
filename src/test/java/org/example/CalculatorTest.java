@@ -64,4 +64,9 @@ class CalculatorTest {
         assertEquals(1.0, calculator.cos(Math.toRadians(0)), 0.0001, "Cos(0°) should be 1.0");
         assertEquals(-0.5, calculator.cos(Math.toRadians(120)), 0.0001, "Cos(120°) should be -0.5");
     }
+
+    @Test
+    void convertToDecimal() {
+        assertEquals(10, calculator.convertToDecimal("1010", 2), "Binary 1010 should be 10");
+    }
 }

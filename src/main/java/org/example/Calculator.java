@@ -36,6 +36,12 @@ public class Calculator {
     public double cos(double angleInRadians) {
         return Math.cos(angleInRadians);
     }
+    public int convertToDecimal(String number, int base) {
+        if (base < 2 || base > 36) {
+            throw new IllegalArgumentException("Base must be between 2 and 36");
+        }
+        return Integer.parseInt(number, base);
+    }
 
 }
 
